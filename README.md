@@ -113,6 +113,8 @@ Restart the Vite and backend terminals after changing env files.
 10. After delivery, open **Sent** and search recipient/subject/body.
 11. Click an email to open its detail view.
 
+## Demo Video : https://drive.google.com/file/d/1sxd4ZQRaYNcD14pjB4P9Y-oK1XHhJNit/view?usp=sharing
+
 ## Rate-limit demo
 
 1. Connect a Slack Incoming Webhook in the header.
