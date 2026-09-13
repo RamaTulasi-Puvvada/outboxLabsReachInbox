@@ -1,0 +1,8 @@
+Before Google login works, edit:
+frontend\.env.local
+backend\.env
+
+Use the same Google OAuth Web Client ID in both files.
+Authorized JavaScript origin: http://localhost:3000
+
+Slack is optional. Paste a Slack Incoming Webhook URL into Connect Slack in the app.
