@@ -1,10 +1,9 @@
 import { Queue } from 'bullmq';
-import { config } from '../config.js';
-
+import { redis } from '../config/clients.js';
 export const EMAIL_QUEUE = 'email-dispatch-queue';
 
 export const emailQueue = new Queue(EMAIL_QUEUE, {
-  connection: config.redis,
+  connection: redis, // Re-use the existing TLS-enabled ioredis instance
   defaultJobOptions: {
     attempts: 3,
     backoff: {
