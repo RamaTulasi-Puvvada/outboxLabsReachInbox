@@ -2,7 +2,9 @@ import axios from 'axios';
 import type { EmailJob, SchedulePayload, User } from '../types';
 
 export const API_URL = (
-  import.meta.env.VITE_API_URL || 'http://localhost:5000'
+  import.meta.env.VITE_API_URL || 
+  import.meta.env.VITE_API_BASE_URL || 
+  'https://outboxlabsreachinbox.onrender.com'
 ).replace(/\/$/, '');
 
 export const api = axios.create({
